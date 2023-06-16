@@ -14,10 +14,10 @@ namespace Veterinaria.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FecNac = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Especie = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Especie = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Raza = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DuenoId = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },

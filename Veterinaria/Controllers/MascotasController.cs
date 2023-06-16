@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Veterinaria.Context;
+using Veterinaria.Data;
 using Veterinaria.Models;
-using static Veterinaria.Context.VeterinariaContext;
+using static Veterinaria.Data.VeterinariaDBContext;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

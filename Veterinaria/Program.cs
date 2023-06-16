@@ -1,8 +1,8 @@
 using Microsoft.Extensions.Configuration;
-using Veterinaria.Context;
+using Veterinaria.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
-using static Veterinaria.Context.VeterinariaContext;
+using static Veterinaria.Data.VeterinariaDBContext;
 
 var builder = WebApplication.CreateBuilder(args);
 

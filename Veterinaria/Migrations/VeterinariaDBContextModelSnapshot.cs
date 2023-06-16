@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Veterinaria.Context;
+using Veterinaria.Data;
 
 #nullable disable
 
 namespace Veterinaria.Migrations
 {
-    [DbContext(typeof(VeterinariaContext.VeterinariaDBContext))]
+    [DbContext(typeof(VeterinariaDBContext))]
     partial class VeterinariaDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -33,6 +33,7 @@ namespace Veterinaria.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Especie")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FecNac")
@@ -43,6 +44,7 @@ namespace Veterinaria.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Raza")

@@ -1,9 +1,8 @@
-﻿namespace Veterinaria.Context
-{
-    using Microsoft.EntityFrameworkCore;
-    using Veterinaria.Models;
-    public class VeterinariaContext
-    {
+﻿using Microsoft.EntityFrameworkCore;
+using Veterinaria.Models;
+namespace Veterinaria.Data
+{   
+   
         public class VeterinariaDBContext
         : DbContext
         {
@@ -25,5 +24,5 @@
 
             public DbSet<Mascotas.Mascota> Mascotas { get; set; }
         }
-    }
+    
 }

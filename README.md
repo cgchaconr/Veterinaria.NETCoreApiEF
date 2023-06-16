@@ -12,3 +12,4 @@ para usar entity framework es necesario ejecutar los siguientes comandos en la c
 *drop-database : para eliminar la BD
 *Remove-Migration : para eliminar las migraciones (util para poder regenear la BD)
 
+
